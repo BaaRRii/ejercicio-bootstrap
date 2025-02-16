@@ -19,7 +19,7 @@
     crossorigin="anonymous"></script>
 
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-success">
     <div class="container-fluid">
       <img src="logo.png" class="img-fluid px-2" alt="logo" width="50px" height="50px">
       <a class="navbar-brand" href="/">Ejercicio Bootstrap</a>
@@ -157,7 +157,70 @@
     </div>
   </div>
 
-  
+  <div class="container my-4">
+    <h2 class="mb-3">Bloque con Pestañas</h2>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pestania1-tab" data-bs-toggle="tab" data-bs-target="#pestania1"
+          type="button" role="tab" aria-controls="pestania1" aria-selected="true">
+          Pestaña 1
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pestania2-tab" data-bs-toggle="tab" data-bs-target="#pestania2" type="button"
+          role="tab" aria-controls="pestania2" aria-selected="false">
+          Pestaña 2
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pestania3-tab" data-bs-toggle="tab" data-bs-target="#pestania3" type="button"
+          role="tab" aria-controls="pestania3" aria-selected="false">
+          Pestaña 3
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content border border-top-0 p-3" id="myTabContent">
+      <div class="tab-pane fade show active" id="pestania1" role="tabpanel" aria-labelledby="pestania1-tab">
+        Contenido de la Pestaña 1.
+      </div>
+      <div class="tab-pane fade" id="pestania2" role="tabpanel" aria-labelledby="pestania2-tab">
+        Contenido de la Pestaña 2.
+      </div>
+      <div class="tab-pane fade" id="pestania3" role="tabpanel" aria-labelledby="pestania3-tab">
+        Contenido de la Pestaña 3.
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-4">
+    <div class="row">
+
+      <div class="col-md-6 mb-3">
+        <h2>Login</h2>
+        <form>
+          <div class="mb-3">
+            <label for="inputEmail" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="nombre@ejemplo.com">
+          </div>
+          <div class="mb-3">
+            <label for="inputPassword" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="checkRemember">
+            <label class="form-check-label" for="checkRemember">Recordar usuario</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Entrar</button>
+        </form>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <h2>Mapa</h2>
+        <img src="map.png" class="img-fluid" alt="Mapa">
+      </div>
+    </div>
+  </div>
+
 
 </body>
 
